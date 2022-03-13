@@ -1,0 +1,794 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Actions</title>
+        <style type="text/css">
+			/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+			body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+			img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+			/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table{border-collapse:collapse !important;}
+			body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+
+			/* ========== Page Styles ========== */
+
+			#bodyCell{padding:20px;}
+			#templateContainer{width:600px;}
+
+			/**
+			* @tab Page
+			* @section background style
+			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+			* @theme page
+			*/
+			body, #bodyTable{
+				/*@editable*/ background-color:#DEE0E2;
+			}
+
+			/**
+			* @tab Page
+			* @section background style
+			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+			* @theme page
+			*/
+			#bodyCell{
+				/*@editable*/ border-top:4px solid #BBBBBB;
+			}
+
+			/**
+			* @tab Page
+			* @section email border
+			* @tip Set the border for your email.
+			*/
+			#templateContainer{
+				/*@editable*/ border:1px solid #BBBBBB;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 1
+			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+			* @style heading 1
+			*/
+			h1{
+				/*@editable*/ color:# !important;
+				display:block;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:26px;
+				/*@editable*/ font-style:normal;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 2
+			* @tip Set the styling for all second-level headings in your emails.
+			* @style heading 2
+			*/
+			h2{
+				/*@editable*/ color:# !important;
+				display:block;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:20px;
+				/*@editable*/ font-style:normal;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 3
+			* @tip Set the styling for all third-level headings in your emails.
+			* @style heading 3
+			*/
+			h3{
+				/*@editable*/ color:# !important;
+				display:block;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:16px;
+				/*@editable*/ font-style:italic;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 4
+			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+			* @style heading 4
+			*/
+			h4{
+				/*@editable*/ color:# !important;
+				display:block;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ font-style:italic;
+				/*@editable*/ font-weight:;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/* ========== Header Styles ========== */
+
+			/**
+			* @tab Header
+			* @section preheader style
+			* @tip Set the background color and bottom border for your email's preheader area.
+			* @theme header
+			*/
+			#templatePreheader{
+				/*@editable*/ background-color:#F4F4F4;
+				/*@editable*/ border-bottom:1px solid #CCCCCC;
+			}
+
+			/**
+			* @tab Header
+			* @section preheader text
+			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+			*/
+			.preheaderContent{
+				/*@editable*/ color:#808080;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:125%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Header
+			* @section preheader link
+			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+			*/
+			.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#606060;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			/**
+			* @tab Header
+			* @section header style
+			* @tip Set the background color and borders for your email's header area.
+			* @theme header
+			*/
+			#templateHeader{
+				/*@editable*/ background-color:#F4F4F4;
+				/*@editable*/ border-top:1px solid #FFFFFF;
+				/*@editable*/ border-bottom:1px solid #CCCCCC;
+			}
+
+			/**
+			* @tab Header
+			* @section header text
+			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+			*/
+			.headerContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:20px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ padding-top:0;
+				/*@editable*/ padding-right:0;
+				/*@editable*/ padding-bottom:0;
+				/*@editable*/ padding-left:0;
+				/*@editable*/ text-align:left;
+				/*@editable*/ vertical-align:middle;
+			}
+
+			/**
+			* @tab Header
+			* @section header link
+			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+			*/
+			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#EB4102;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			#headerImage{
+				height:auto;
+				max-width:600px;
+			}
+
+			/* ========== Body Styles ========== */
+
+			/**
+			* @tab Body
+			* @section body style
+			* @tip Set the background color and borders for your email's body area.
+			*/
+			#templateBody{
+				/*@editable*/ background-color:#F4F4F4;
+				/*@editable*/ border-top:1px solid #FFFFFF;
+				/*@editable*/ border-bottom:1px solid #CCCCCC;
+			}
+
+			/**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+			.bodyContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:16px;
+				/*@editable*/ line-height:150%;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+			.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#EB4102;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.bodyContent img{
+				display:inline;
+				height:auto;
+				max-width:560px;
+				padding-top:35px;
+				
+			}
+
+			/* ========== Column Styles ========== */
+
+			.templateColumnContainer{display:inline; width:260px;}
+
+			/**
+			* @tab Columns
+			* @section column style
+			* @tip Set the background color and borders for your email's column area.
+			*/
+			#templateColumns{
+				/*@editable*/ background-color:#F4F4F4;
+				/*@editable*/ border-top:1px solid #FFFFFF;
+				/*@editable*/ border-bottom:1px solid #CCCCCC;
+			}
+
+			/**
+			* @tab Columns
+			* @section left column text
+			* @tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
+			*/
+			.leftColumnContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				padding-top:0;
+				padding-right:0;
+				padding-bottom:20px;
+				padding-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Columns
+			* @section left column link
+			* @tip Set the styling for your email's left column content links. Choose a color that helps them stand out from your text.
+			*/
+			.leftColumnContent a:link, .leftColumnContent a:visited, /* Yahoo! Mail Override */ .leftColumnContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#EB4102;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			/**
+			* @tab Columns
+			* @section right column text
+			* @tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
+			*/
+			.rightColumnContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				padding-top:0;
+				padding-right:0;
+				padding-bottom:20px;
+				padding-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Columns
+			* @section right column link
+			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
+			*/
+			.rightColumnContent a:link, .rightColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#EB4102;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.leftColumnContent img, .rightColumnContent img{
+				display:inline;
+				height:auto;
+				max-width:260px;
+				
+			}
+
+			/* ========== Footer Styles ========== */
+
+			/**
+			* @tab Footer
+			* @section footer style
+			* @tip Set the background color and borders for your email's footer area.
+			* @theme footer
+			*/
+			#templateFooter{
+				/*@editable*/ background-color:#F4F4F4;
+				/*@editable*/ border-top:1px solid #FFFFFF;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer text
+			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+			* @theme footer
+			*/
+			.footerContent{
+				/*@editable*/ color:#808080;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:150%;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer link
+			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+			*/
+			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
+				/*@editable*/ color:#606060;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+
+            @media only screen and (max-width: 480px){
+				/* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+				body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+                body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+
+				/* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+				#bodyCell{padding:10px !important;}
+
+				/* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+
+				/* ======== Page Styles ======== */
+
+				/**
+				* @tab Mobile Styles
+				* @section template width
+				* @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+				*/
+				#templateContainer{
+					max-width:600px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 1
+				* @tip Make the first-level headings larger in size for better readability on small screens.
+				*/
+				h1{
+					/*@editable*/ font-size:24px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 2
+				* @tip Make the second-level headings larger in size for better readability on small screens.
+				*/
+				h2{
+					/*@editable*/ font-size:20px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 3
+				* @tip Make the third-level headings larger in size for better readability on small screens.
+				*/
+				h3{
+					/*@editable*/ font-size:18px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 4
+				* @tip Make the fourth-level headings larger in size for better readability on small screens.
+				*/
+				h4{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/* ======== Header Styles ======== */
+
+				#templatePreheader{display:none !important;} /* Hide the template preheader to save space */
+
+				/**
+				* @tab Mobile Styles
+				* @section header image
+				* @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+				*/
+				#headerImage{
+					height:auto !important;
+					/*@editable*/ max-width:600px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section header text
+				* @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.headerContent{
+					/*@editable*/ font-size:20px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/* ======== Body Styles ======== */
+
+				/**
+				* @tab Mobile Styles
+				* @section body image
+				* @tip Make the main body image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+				*/
+				#bodyImage{
+					height:auto !important;
+					/*@editable*/ max-width:560px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section body text
+				* @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.bodyContent{
+					/*@editable*/ font-size:18px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/* ======== Column Styles ======== */
+
+				.templateColumnContainer{display:block !important; width:100% !important;}
+
+				/**
+				* @tab Mobile Styles
+				* @section column image
+				* @tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+				*/
+				.columnImage{
+					height:auto !important;
+					/*@editable*/ max-width:260px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section left column text
+				* @tip Make the left column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.leftColumnContent{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section right column text
+				* @tip Make the right column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.rightColumnContent{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/* ======== Footer Styles ======== */
+
+				/**
+				* @tab Mobile Styles
+				* @section footer text
+				* @tip Make the body content text larger in size for better readability on small screens.
+				*/
+				.footerContent{
+					/*@editable*/ font-size:14px !important;
+					/*@editable*/ line-height:115% !important;
+				}
+
+				.footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
+			}
+		</style>
+    </head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    	<center>
+        	<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+            	<tr>
+                	<td align="center" valign="top" id="bodyCell">
+                    	<!-- BEGIN TEMPLATE // -->
+                    	<table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+                        	
+                        	<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN HEADER // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+                                        <tr>
+                                            <td valign="top" class="headerContent">
+                                            	<a href="http://actionprinterrepair.com/"><img src="http://s21.postimg.org/n92vs4fbr/image.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext /></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END HEADER -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN BODY // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" style="background-color:#3A70AC;">
+                                        <tr>
+                                            <td valign="top" class="bodyContent" mc:edit="body_content00">
+                                                <h1 style="text-align:center;color:#ffffff;font-size:30px;">Action Printer Repair December Newsletter</h1>
+                                                <h4 style="text-align:center;color:#ffffff;font-size:18px;"">"We Keep Your Printers In Action"</h4>
+                                                 
+                                            </td>
+                                        </tr>
+                                    	
+                                    </table>
+                                    <!-- // END BODY -->
+                                </td>
+                            </tr>
+							
+							<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN BODY // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" style="background-color:#3A70AC;">
+                                        <tr>
+                                            <td valign="top" class="bodyContent" mc:edit="body_content00">
+                                                <h2 style="text-align:center;color:#ffffff;font-size:21px;">HP Innovation Brings Breakthrough Printing Technology to the Modern Office</h2>
+                                                <h3 style="text-align:center;color:#ffffff;font-size:18px;font-weight:bold;">Smallest and fastest LaserJets save time, space and energy</h3>
+												<br />
+												
+												
+												
+												<p style="text-align:left;color:#ffffff;font-size:16px;">NEW YORK CITY, March 10, 2015 - HP today announced a re-engineered,
+												sleek new series of LaserJet printers designed to make businesses more efficient.
+												Built around the latest in toner formulation - new Original HP Toner cartridges with JetIntelligence - 
+												the HP LaserJets use up to 53 percent less energy,
+												take up to 40 percent less space and wake up, print and duplex in a fraction of the time.
+												1, 2  Today's announcement represents our most significant laser printing re-engineering since the introduction of the first LaserJet in 1984.
+												<a href="http://www8.hp.com/us/en/hp-news/press-release.html?id=1923205#.VwRCZaQrLIV"style="color:#000099;font-weight:bold;">Click here to read more.</a></p>
+												
+												<br />
+												<br />
+												
+												
+												<h4 style="text-align:center;color:#FF0000;font-size:21px;font-weight:bold;">For more information:</h4>
+												<h4 style="text-align:center;color:#FF0000;font-size:21px;font-weight:bold;">Call: <a href="" style="color:#000099;">650-241-2344</a></h4>
+												<h4 style="text-align:center;color:#FF0000;font-size:21px;font-weight:bold;">Email: <a href="https://mail.google.com/mail/?ui=2&view=btop&ver=dqujp3h61mgd#to%253Dgeorge%252540actionprinterrepair.com%2526cmid%253D1" style="color:#000099;">george@actionprinterrepair.com</a></h4>
+                                                
+                                            </td>
+                                        </tr>
+										
+										
+                                    	
+                                    </table>
+                                    <!-- // END BODY -->
+                                </td>
+                            </tr>
+							
+							
+							<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN BODY // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" style="background-color:#3A70AC;">
+                                        <tr>
+                                            <td valign="top" class="bodyContent" mc:edit="body_content00">
+                                                <h3 style="text-align:center;color:#ffffff;font-size:25px;">Nanoscribe 3D printers used by five of top ten universities in the world</h3>
+												<br />
+                                                <h4 style="text-align:left;color:#ffffff;font-size:18px;font-weight:bold;">Nov 30, 2015 | By Kira</h4>
+												<br />
+                                                <p style="text-align:left;color:#ffffff;font-size:16px;"> 
+													Though we now know that 85% of the 3D printers shipped globally fall into the personal/desktop 3D printing category, 
+													the majority of groundbreaking 3D printing advancements come not from our garages, but from leading research universities, 
+													where the top minds in science and engineering have exclusive access to cutting-edge laboratories. It makes sense then, 
+													that when equipping these labs, universities would select specialized, high-end 3D printing machines, 
+													tailored to their exacting requirements and demanding scientific applications. <a href="http://www.3ders.org/articles/20151130-nanoscribe-3d-printers-used-by-five-of-top-ten-universities-in-the-world.html" style="color:#000099;font-weight:bold;">Click here to read more.</a> 
+												</p>
+												
+												
+												<br />
+												<br />
+												
+												
+												<h4 style="text-align:left;color:#FF0000;font-size:21px;font-weight:bold;">For more information:</h4>
+												<h4 style="text-align:left;color:#FF0000;font-size:21px;font-weight:bold;">Call: <a href="" style="color:#000099;">650-241-2344</a></h4>
+												<h4 style="text-align:left;color:#FF0000;font-size:21px;font-weight:bold;">Email: <a href="" style="color:#000099;">george@actionprinterrepair.com</a></h4>
+                                            </td>
+                                        </tr>
+                                    	
+                                    </table>
+                                    <!-- // END BODY -->
+                                </td>
+                            </tr>
+							
+							
+							<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN BODY // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" style="background-color:#243154;">
+                                        
+                                    	<tr>
+                                        	<td class="bodyContent" style="padding-top:0; padding-bottom:0;">
+                                            	<img src="http://s18.postimg.org/anj0rz3fd/image.jpg" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowtext />
+												<br />
+												<br />
+												<br />
+												<br />
+										
+												<h2 style="padding-left10px;color:#1DA1F2;font-style:italic;font-size:25px;">Follow Us on Twitter <a href="https://twitter.com/" style="color:#B25910;font-weight:bold;">Click Here</a></h2>
+												
+												<br />
+												
+												<hr />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td valign="top" class="bodyContent" mc:edit="body_content01">
+                                                <h1 style="text-align:center;color:#ffffff;font-size:50px;">!!! Special Deals !!!</h1>
+                                                <h1 style="text-align:center;color:#ffffff;font-size:30px;">Refurbished Printers</h1>
+												<br />
+                                                <h3 style="text-align:center;color:#FF6601;font-size:30px;">Call for selection and prices.</h3>
+												<br />
+                                                <h3 style="text-align:center;font-size:30px;"><a href="" style="color:#3890B6;font-weight:bold;"> 650-241-2344</a></h3>
+                                                <br />
+												
+												<hr />
+												
+												<br />
+												
+												<hr style="width:50%;" />
+												
+												<br />
+												<br />
+												
+												<h2 style="text-align:center;color:#ffffff;font-size:30px;">REFERRALS WANTED!!</h2>
+												
+												<br />
+												<br />
+											
+											  
+												
+												<h2 style="text-align:center;color:#;font-size:24px;"><a href="" style="color:#3890B6;font-weight:bold;">Click here to email referrals to George Thomas.</a></h2>
+												
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END BODY -->
+                                </td>
+                            </tr>
+							
+							
+							
+							
+                        	<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN COLUMNS // -->
+                                    <table border="0" cellpadding="20" cellspacing="0" width="100%" id="templateColumns" style="background-color:#ffffff;">
+                                    	<tr mc:repeatable>
+                                        	<td align="left" valign="top" style="padding-bottom:0;">
+                                            	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer"style="max-width:150px;width:150px;">
+                                                	<tr>
+                                                    	<td class="leftColumnContent">
+                                                        	<img src="http://s23.postimg.org/hp521tqjv/image.jpg" style="max-width:150px;width:150px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </table>
+                                            	<table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer" style="max-width:370px;width:370px;">
+                                                	<tr>
+                                                    	<td class="rightColumnContent">
+															
+															<h3 style="font-size:21px;color:#000000;font-style:normal;">Again I want to thank you for your business. We look forward to hearing from you soon.</h3>
+															<br />
+															<br />
+															
+															<h3 style="font-size:20px;color:#000099;font-weight:bold;">Sincerely</h3>
+														
+                                                        	<img src="http://s23.postimg.org/y0njh3wkr/right.jpg" style="max-width:150px;width:150px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END COLUMNS -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN FOOTER // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter" style="background-color:#243154;">
+                                        
+                                        <tr>
+                                            <td valign="top" class="footerContent" style="padding-top:0;line-height:0px;" mc:edit="footer_content01">
+                                                <h6 style="font-size:13px;color:#ffffff;">Action Printer Repair</h6>
+                                                <h6 style="font-size:13px;color:#ffffff;">George Thomas</h6>
+                                                <h6 style="font-size:13px;color:#ffffff;">Phone: <a href=""style="color:#3890B6;">(650)241-2344</a></h6>
+                                                <h6 style="font-size:13px;color:#ffffff;">Email: <a href=""style="color:#3890B6;">george@actionprinterrepair.com</a></h6>
+                                                <h6 style="font-size:13px;color:#ffffff;">Web: <a href="http://actionprinterrepair.com/"style="color:#3890B6;">www.actionprinterrepair.com</a></h6>
+                                            </td>
+                                        </tr>
+                                        
+                                    </table>
+                                    <!-- // END FOOTER -->
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

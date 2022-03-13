@@ -1,0 +1,123 @@
+* {margin:0px;padding:0px;}
+body{font-family:arial; color:#000;font-size:14px;line-height:20px;background-image: url("pp.png");}
+.fix{overflow:hidden;}
+.structure{
+	width:960px;
+	margin:0 auto;
+
+}
+.floatleft{float:left;}
+.floatright{float:right;}
+.hadar {
+  width: 960px;
+}
+.logo_content{width:360px;margin-top:20px;margin-right:20px;}
+.logo_content h1 {
+  line-height: 125%;
+  padding-left: 100px;
+  padding-top: 80px;
+  padding-bottom: 10px;
+  color:#DF460C;
+}
+.one_image{width:560px;margin-top:20px;margin-right:20px;}
+.one_image img {
+  padding-bottom: 15px;
+  padding-left: 90px;
+  padding-top: 0;
+}
+.image_area{}
+.image{width:960px;}
+.image img {
+  padding-bottom: 15px;
+  padding-left: 180px;
+  padding-top: 0;
+}
+.button_area{}
+.button {
+  margin-bottom: 30px;
+  width: 960px;
+}
+.one_button{width:460px;}
+.one_button ul{}
+.one_button ul li{padding-left: 130px;}
+.one_button ul li a{text-decoration:none;color:#000000;}
+.two_button{width:460px;}
+.two_button ul{}
+.two_button ul li{padding-left: 90px;}
+.two_button ul li a{text-decoration:none;color:#000000;}
+.form_area{}
+.form {
+  width: 960px;
+  padding-bottom: 20px;
+}
+.video {
+  padding-left: 95px;
+  width: 495px;
+}
+.video ifrane{padding-left:90px;}
+.inputform {
+  background-color: #e7e7e7;
+  line-height: 230%;
+  margin-right: 120px;
+  margin-top: 15px;
+  padding-left: 20px;
+  padding-right: 0;
+  padding-top: 25px;
+  width: 220px;
+}
+.inputform form{padding-left:20px;}
+.inputform form input {
+  border-radius: 5px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  width: 160px;
+}
+.sampleform{padding-left:20px;padding-top:20px;}
+.content_area{}
+.content{width:960px;padding-bottom: 40px;}
+.one_content{width:760px;background-color:#C93F27;margin-left: 90px;margin-right:;}
+.one_content h2 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+.two_content{width:960px;}
+.two_content p {
+  margin-top: 10px;
+  padding-left: 90px;
+}
+.address_area{}
+.address {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 960px;
+}
+.one{width:460px;}
+.one p {
+  padding-left: 90px;
+}
+.two {width:360px;}
+.two  img{}
+.footer_area{}
+.footer {
+  margin-bottom: 30px;
+  padding-top: 5px;
+  width: 960px;
+}
+.one_footer {
+  width: 460px;
+  padding-left: 90px;
+}
+.one_footer h5 {
+  float: left;
+  margin-right: 30px;
+  color: #FD2F16;
+}
+.two_footer{width:160px;}
+.two_footer img {
+  padding-right: 150px;
+}
+.{}
+.{}
+.{}

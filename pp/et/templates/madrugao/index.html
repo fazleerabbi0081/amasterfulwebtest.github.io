@@ -1,0 +1,816 @@
+<!DOCTYPE html >
+<html >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.5"/>
+        <title>Template</title>
+
+      
+
+        <style type="text/css">
+			/*////// RESET STYLES //////*/
+			body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+			table{border-collapse:collapse;}
+			img, a img{border:0; outline:none; text-decoration:none;}
+			h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
+			p{margin: 1em 0;}
+
+			/*////// CLIENT-SPECIFIC STYLES //////*/
+			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail/Outlook.com to display emails at full width. */
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%;} /* Force Hotmail/Outlook.com to display line heights normally. */
+			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up. */
+			#outlook a{padding:0;} /* Force Outlook 2007 and up to provide a "view in browser" message. */
+			img{-ms-interpolation-mode: bicubic;} /* Force IE to smoothly render resized images. */
+			body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
+
+			/*////// FRAMEWORK STYLES //////*/
+			.flexibleContainerCell{padding-top:20px; padding-Right:20px; padding-Left:20px;}
+			.flexibleImage{height:auto;}
+			.bottomShim{padding-bottom:20px;}
+			.imageContent, .imageContentLast{padding-bottom:20px;}
+			.nestedContainerCell{padding-top:20px; padding-Right:20px; padding-Left:20px;}
+
+			/*////// GENERAL STYLES //////*/
+			body, #bodyTable{background-color:#F5F5F5;}
+			#bodyCell{padding-top:40px; padding-bottom:40px;}
+			#emailBody{background-color:#FFFFFF; border:1px solid #DDDDDD; border-collapse:separate; border-radius:4px;}
+			h1, h2, h3, h4, h5, h6{color:#202020; font-family:Helvetica; font-size:20px; line-height:125%; text-align:Left;}
+			.textContent, .textContentLast{color:#404040; font-family:Helvetica; font-size:15px; line-height:125%; text-align:Left; padding-bottom:20px;}
+			.textContent a, .textContentLast a{color:#2C9AB7; text-decoration:underline;}
+			.nestedContainer{background-color:#E5E5E5; border:1px solid #CCCCCC;}
+			.emailButton{background-color:#2C9AB7; border-collapse:separate; border-radius:4px;}
+			.buttonContent{color:#FFFFFF; font-family:Helvetica; font-size:18px; font-weight:bold; line-height:100%; padding:15px; text-align:center;}
+			.buttonContent a{color:#FFFFFF; display:block; text-decoration:none;}
+			.emailCalendar{background-color:#FFFFFF; border:1px solid #CCCCCC;}
+			.emailCalendarMonth{background-color:#2C9AB7; color:#FFFFFF; font-family:Helvetica, Arial, sans-serif; font-size:15px; font-weight:bold; padding-top:10px; padding-bottom:10px; text-align:center;}
+			.emailCalendarDay{color:#2C9AB7; font-family:Helvetica, Arial, sans-serif; font-size:60px; font-weight:bold; line-height:100%; padding-top:20px; padding-bottom:20px; text-align:center;}
+
+			/*////// MOBILE STYLES //////*/
+			@media only screen and (max-width: 480px){			
+				/*////// CLIENT-SPECIFIC STYLES //////*/
+				body{width:100% !important; min-width:100% !important;} /* Force iOS Mail to render the email at full width. */
+
+				/*////// FRAMEWORK STYLES //////*/
+				/*
+					CSS selectors are written in attribute
+					selector format to prevent Yahoo Mail
+					from rendering media query styles on
+					desktop.
+				*/
+				table[id="emailBody"]{width:100% !important;}
+				table[class="flexibleContainer"]{width:100% !important;}
+				img[class="flexibleImage"]{width:100% !important;}
+				table[class="emailButton"]{width:100% !important;}
+				td[class="buttonContent"]{padding:0 !important;}
+				td[class="buttonContent"] a{padding:15px !important;}
+				td[class="textContentLast"], td[class="imageContentLast"]{padding-top:20px !important;}
+
+				/*////// GENERAL STYLES //////*/
+				td[id="bodyCell"]{padding-top:10px !important; padding-Right:10px !important; padding-Left:10px !important;}
+			}
+		</style>
+     
+      
+    </head>
+    <body>
+    	<center>
+        	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+            	<tr>
+                	<td align="center" valign="top" id="bodyCell">
+                    	<!-- EMAIL CONTAINER // -->
+                        <!--
+                        	The table "emailBody" is the email's container.
+                            Its width can be set to 100% for a color band
+                            that spans the width of the page.
+                        -->
+                    	<table border="0" cellpadding="0" cellspacing="0" width="600" id="emailBody">
+
+
+							<!-- MODULE ROW // -->
+                            <!--
+                            	To move or duplicate any of the design patterns
+                                in this email, simply move or copy the entire
+                                MODULE ROW section for each content block.
+                            -->
+							<tr bgcolor="#F6F6F6">
+                            	<td align="center" valign="top">
+                                	<!-- CENTERING TABLE // -->
+                                    <!--
+                                    	The centering table keeps the content
+                                        tables centered in the emailBody table,
+                                        in case its width is set to 100%.
+                                    -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td align="center" valign="top">
+                                            	<!-- FLEXIBLE CONTAINER // -->
+                                                <!--
+                                                	The flexible container has a set width
+                                                    that gets overridden by the media query.
+                                                    Most content tables within can then be
+                                                    given 100% widths.
+                                                -->
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                	<tr>
+                                                    	<td align="center" valign="top" width="600" class="flexibleContainerCell">
+
+
+                                                            <!-- CONTENT TABLE // -->
+                                                            <!--
+                                                            	The content table is the first element
+                                                                that's entirely separate from the structural
+                                                                framework of the email.
+                                                            -->
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" >
+                                                                <tr>
+                                                                    <td valign="top" class="textContent" style="font-size:10px">
+                                                                        
+                                                                        <span style="float:left;">
+																			Caso não consiga visualizar esse e-mail, <a href="#" target="_blank" style="color:#007DAF">clique aqui</a> 
+																		<br />
+																			Caso queira deixar de receber nossos e-mails, <a href="#" target="_blank" style="color:#007DAF">clique aqui</a> 
+																		</span>
+																		
+																		<span style="float:right;text-align:right" >
+																			Adicione <a href="#" target="_blank" style="color:#007DAF">central@madrugaosuplementos.com.br</a>
+																		<br />
+																			e não perca nenhuma oferta
+																		</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+															
+
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // FLEXIBLE CONTAINER -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // CENTERING TABLE -->
+                                </td>
+                            </tr>
+                            <!-- // MODULE ROW -->
+
+							<tr>
+                            	<td align="center" valign="top">
+                                	<!-- CENTERING TABLE // -->
+                                    <!--
+                                    	The centering table keeps the content
+                                        tables centered in the emailBody table,
+                                        in case its width is set to 100%.
+                                    -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td align="center" valign="top">
+                                            	<!-- FLEXIBLE CONTAINER // -->
+                                                <!--
+                                                	The flexible container has a set width
+                                                    that gets overridden by the media query.
+                                                    Most content tables within can then be
+                                                    given 100% widths.
+                                                -->
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                	<tr>
+                                                    	<td align="center" valign="top" width="600" class="flexibleContainerCell">
+
+
+                                                            <!-- CONTENT TABLE // -->
+                                                            <!--
+                                                            	The content table is the first element
+                                                                that's entirely separate from the structural
+                                                                framework of the email.
+                                                            -->
+                                                            
+															 <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td valign="top" class="imageContent">
+                                                                        <img src="http://s33.postimg.org/o2oqzpxn3/emkt_welcome_feminino.png" width="560" class="flexibleImage" />
+                                                                    </td>
+                                                                </tr>
+																<tr>
+																	<td valign="top" class="bodyContent" mc:edit="body_content00" style="text-transform: uppercase;font-size:12px;padding-Left:10px;color:#3B3B3B" >
+											
+																		<a href="#" style="text-decoration:none;color:#535251">produtos </a> | <a href="#" style="text-decoration:none;color:#535251">fabricantes</a>   |  <a href="#" style="text-decoration:none;color:#535251">objetivo</a> | <a href="#" style="text-decoration:none;color:#535251">kits promocionais </a> | <a href="#" style="text-decoration:none;color:#535251">mais vendidos</a> | <a href="#" style="text-decoration:none;color:#535251">outlet</a>
+											
+																	</td>
+																</tr> 
+                                                            </table>
+															
+                                                            <!-- // CONTENT TABLE -->
+
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // FLEXIBLE CONTAINER -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // CENTERING TABLE -->
+                                </td>
+                            </tr>
+							
+
+
+							
+
+
+							<!-- MODULE ROW // -->
+							<tr>
+                            	<td align="center" valign="top">
+                                	<!-- CENTERING TABLE // -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td align="center" valign="top">
+                                            	<!-- FLEXIBLE CONTAINER // -->
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                	<tr>
+                                                    	<td align="center" valign="top" width="600" class="flexibleContainerCell">
+
+
+                                                            <!-- CONTENT TABLE // -->
+                                                            <!--
+                                                            	The table cell imageContent has padding
+                                                                applied to the bottom as part of the framework,
+                                                                ensuring images space correctly in Android Gmail.
+                                                            -->
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td valign="top" class="imageContent">
+                                                                        <img src="http://s33.postimg.org/vqpfn90gf/emkt_welcome_feminino.jpg" width="560" height="auto" class="flexibleImage" />
+                                                                    </td>
+																	
+                                                                </tr>
+																
+                                                            </table>
+                                                            <!-- // CONTENT TABLE -->
+															<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td valign="top"  style="text-transform: uppercase;font-size:15px;font-family:Helvetica">
+																	Top 5 Marcas
+                                                                        
+                                                                    </td>
+																	<td valign="top" class="imageContent">
+                                                                        <img src="http://s33.postimg.org/n8tro4y33/image.png" width="auto" height="auto" class="flexibleImage" />
+                                                                    </td>
+																	<td valign="top" class="imageContent">
+                                                                        <img src="http://s33.postimg.org/csmudadu7/energy.png" width="auto" height="auto" class="flexibleImage" />
+                                                                    </td>
+																	<td valign="top" class="imageContent">
+                                                                        <img src="http://s33.postimg.org/gq5ioyb9r/max.png" width="auto" height="auto" class="flexibleImage" />
+                                                                    </td>
+																	<td valign="top" class="imageContent">
+                                                                        <img src="http://s33.postimg.org/5t8sdxdvz/prob.png" width="auto" height="auto" class="flexibleImage" />
+                                                                    </td>
+																	<td valign="top" class="imageContent">
+                                                                        <img src="http://s33.postimg.org/4bnc2d95b/uni.png" width="auto" height="auto" class="flexibleImage" />
+                                                                    </td>
+																	
+																	
+																	
+                                                                </tr>
+                                                            </table>
+															 <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td valign="top" class="imageContent">
+                                                                        <img src="http://s33.postimg.org/v33k10knj/big_logo.jpg" width="auto" height="auto" class="flexibleImage" />
+                                                                    </td>
+																	
+                                                                </tr>
+																
+                                                            </table>
+
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // FLEXIBLE CONTAINER -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // CENTERING TABLE -->
+                                </td>
+                            </tr>
+                            <!-- // MODULE ROW -->
+
+
+							
+
+
+							<!-- MODULE ROW // -->
+							<tr>
+                            	<td align="center" valign="top">
+                                	<!-- CENTERING TABLE // -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td align="center" valign="top">
+                                            	<!-- FLEXIBLE CONTAINER // -->
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                	<tr>
+                                                    	<td valign="top" width="600" class="flexibleContainerCell">
+
+
+                                                            <!-- CONTENT TABLE // -->
+                                                            <table align="Left" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
+                                                                <tr>
+                                                                    <td valign="top" class="imageContent">
+                                                                        <img src="http://s33.postimg.org/j6q6553tb/product.png" width="260" class="flexibleImage" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr> 
+                                                                    <td valign="top" class="textContent" 
+																		style=" 			padding-Left:20px;text-align:center;color:#959595;font-size:14px;font-weight:bold;line-height:22px">
+                                                                        <span style="font-size:15px;color:#ff9a00;line-height:20px;font-weight:bold">		   BCAA 		Complex 2200 <br />
+																				(200caps) Dymatize - 15% OFF <br />
+																				(Vencimento 31/07/2016)
+																		</span>
+																		<span style="line-height:18px;text-transform: uppercase">
+																				Dymatize</br>
+																				De: <del>R$148,90 </del> R$126,57 <br>
+																				2x de <span style="color:#0077BE">R$63,29</span> sem juros<br><br>
+																				<b style="font-size:60px;color:#ff9a00;line-height:20px;font-weight:bold">113</b>
+																				<b style="font-size:36px;color:#ff9a00;line-height:20px;font-weight:bold">,91</b>
+																				<br>
+																				<span style="font-size:11px">No boleto ou depósito</span>
+																		</span>
+                                                            
+																		<a href="#">
+																				<img src="http://s33.postimg.org/5a5sds4pr/compare.jpg"  style="max-width:108px; display: block; margin:auto;padding-top:10px"/>
+																		</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // CONTENT TABLE -->
+
+
+                                                            <!-- CONTENT TABLE // -->
+                                                            <table align="right" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
+                                                                <tr>
+                                                                    <td valign="top" class="imageContent">
+                                                                        <img src="http://s33.postimg.org/j6q6553tb/product.png" width="260" class="flexibleImage" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                     <td valign="top" class="textContent" 
+																		style=" 			padding-Left:20px;text-align:center;color:#959595;font-size:14px;font-weight:bold;line-height:22px">
+                                                                        <span style="font-size:15px;color:#ff9a00;line-height:20px;font-weight:bold">		   BCAA 		Complex 2200 <br />
+																				(200caps) Dymatize - 15% OFF <br />
+																				(Vencimento 31/07/2016)
+																		</span>
+																		<span style="line-height:18px;text-transform: uppercase">
+																				Dymatize</br>
+																				De: <del>R$148,90 </del> R$126,57 <br>
+																				2x de <span style="color:#0077BE">R$63,29</span> sem juros<br><br>
+																				<b style="font-size:60px;color:#ff9a00;line-height:20px;font-weight:bold">113</b>
+																				<b style="font-size:36px;color:#ff9a00;line-height:20px;font-weight:bold">,91</b>
+																				<br>
+																				<span style="font-size:11px">No boleto ou depósito</span>
+																		</span>
+                                                            
+																		<a href="#">
+																				<img src="http://s33.postimg.org/5a5sds4pr/compare.jpg"  style="max-width:108px; display: block; margin:auto;padding-top:10px"/>
+																		</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+															<!-- CONTENT TABLE // -->
+                                                            <table align="Left" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
+                                                                <tr>
+                                                                    <td valign="top" class="imageContent">
+                                                                        <img src="http://s33.postimg.org/j6q6553tb/product.png" width="260" class="flexibleImage" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr> 
+                                                                    <td valign="top" class="textContent" 
+																		style=" 			padding-Left:20px;text-align:center;color:#959595;font-size:14px;font-weight:bold;line-height:22px">
+                                                                        <span style="font-size:15px;color:#ff9a00;line-height:20px;font-weight:bold">		   BCAA 		Complex 2200 <br />
+																				(200caps) Dymatize - 15% OFF <br />
+																				(Vencimento 31/07/2016)
+																		</span>
+																		<span style="line-height:18px;text-transform: uppercase">
+																				Dymatize</br>
+																				De: <del>R$148,90 </del> R$126,57 <br>
+																				2x de <span style="color:#0077BE">R$63,29</span> sem juros<br><br>
+																				<b style="font-size:60px;color:#ff9a00;line-height:20px;font-weight:bold">113</b>
+																				<b style="font-size:36px;color:#ff9a00;line-height:20px;font-weight:bold">,91</b>
+																				<br>
+																				<span style="font-size:11px">No boleto ou depósito</span>
+																		</span>
+                                                            
+																		<a href="#">
+																				<img src="http://s33.postimg.org/5a5sds4pr/compare.jpg"  style="max-width:108px; display: block; margin:auto;padding-top:10px"/>
+																		</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // CONTENT TABLE -->
+
+
+                                                            <!-- CONTENT TABLE // -->
+                                                            <table align="right" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
+                                                                <tr>
+                                                                    <td valign="top" class="imageContent">
+                                                                        <img src="http://s33.postimg.org/j6q6553tb/product.png" width="260" class="flexibleImage" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                     <td valign="top" class="textContent" 
+																		style=" 			padding-Left:20px;text-align:center;color:#959595;font-size:14px;font-weight:bold;line-height:22px">
+                                                                        <span style="font-size:15px;color:#ff9a00;line-height:20px;font-weight:bold">		   BCAA 		Complex 2200 <br />
+																				(200caps) Dymatize - 15% OFF <br />
+																				(Vencimento 31/07/2016)
+																		</span>
+																		<span style="line-height:18px;text-transform: uppercase">
+																				Dymatize</br>
+																				De: <del>R$148,90 </del> R$126,57 <br>
+																				2x de <span style="color:#0077BE">R$63,29</span> sem juros<br><br>
+																				<b style="font-size:60px;color:#ff9a00;line-height:20px;font-weight:bold">113</b>
+																				<b style="font-size:36px;color:#ff9a00;line-height:20px;font-weight:bold">,91</b>
+																				<br>
+																				<span style="font-size:11px">No boleto ou depósito</span>
+																		</span>
+                                                            
+																		<a href="#">
+																				<img src="http://s33.postimg.org/5a5sds4pr/compare.jpg"  style="max-width:108px; display: block; margin:auto;padding-top:10px"/>
+																		</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // FLEXIBLE CONTAINER -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // CENTERING TABLE -->
+                                </td>
+                            </tr>
+                            <!-- // MODULE ROW -->
+							<!-- MODULE ROW // -->
+							<tr bgcolor="#0077BE">
+                            	<td align="center" valign="top">
+                                	<!-- CENTERING TABLE // -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td align="center" valign="top">
+                                            	<!-- FLEXIBLE CONTAINER // -->
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                	<tr>
+                                                    	<td align="center" valign="top" width="600" class="flexibleContainerCell">
+
+
+                                                            <!-- CONTENT TABLE // -->
+                                                            <!--
+                                                            	The table cell imageContent has padding
+                                                                applied to the bottom as part of the framework,
+                                                                ensuring images space correctly in Android Gmail.
+                                                            -->
+															<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr bgcolor="#005E94">
+																	<td>
+                                                                    <center>
+																	<span style="text-align:center;color:#FFFFFF;font-family:Helvetica;font-size:16px;padding-bottom:10px"><b><br>// COMPRE POR OBJETIVO //</b></span>
+																	</center>
+																	
+																	</td>
+																	
+                                                                </tr>
+																
+                                                            </table>
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr bgcolor="#FF9C2C">
+																	<td>
+                                                                     
+																	<ul style="list-style:none;padding-bottom:10px;color:#FFFFFF;font-family:Helvetica light;font-size:10px;text-transform:uppercase;font-weight:bold;align:left;background-color:#FF9C2C">
+																		<center>
+																		<li style="float:left;"> 
+																			ganhar peso  | &nbsp;
+																		</li>
+																		<li style="float:left;"> 
+																			massa muscular | &nbsp;
+																		</li>
+																		<li style="float:left;"> 
+																		perder gordura | &nbsp;
+																		</li>
+																		<li style="float:left;"> 
+																			definição muscular | &nbsp;
+																		</li>
+																		<li style="float:left;"> 
+																				aumentar energia 
+																		</li>
+																		
+																		
+																		</center>
+																	
+																	</ul>
+																	</td>
+																	
+                                                                </tr>
+																<tr bgcolor=" F6F6F6">
+																	<td>
+                                                                     
+																	<ul style="list-style:none;padding-bottom:30px;color:#9C9C9C;font-family:Helvetica light;font-size:10px;text-transform:uppercase;font-weight:bold;align:left">
+																		<center>
+																		<li style="float:left;border-Right:1px solid #9C9C9C"> 
+																			hipercalóricos  &nbsp;<br />massa   &nbsp;
+																		</li>
+																		<li style="float:left;border-Right:1px solid #9C9C9C;padding-left:10px;"> 
+																			whey protein &nbsp; <br />albumina  &nbsp;
+																		</li>
+																		<li style="float:left;border-Right:1px solid #9C9C9C;padding-left:10px;"> 
+																			termogênicos &nbsp; <br />colágeno &nbsp;
+																		</li>
+																		<li style="float:left;border-right:1px solid #9C9C9C;padding-left:10px"> 
+																			aminoácidos/bcaa &nbsp;<br />creatina &nbsp;
+																		</li>
+																		<li style="float:left;padding-left:10px;"> 
+																			maltodextrina &nbsp; <br />dextrose &nbsp;
+																		</li>
+																		
+																		
+																		
+																		</center>
+																	
+																	</ul>
+																	
+																	</td>
+																	
+                                                                </tr>
+																
+                                                            </table>
+                                                            <!-- // CONTENT TABLE -->
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" >
+                                                                <tr >
+																	<td>
+																	<center>
+																	<span style="text-align:center;color:#FFFFFF;font-family:Helvetica;font-size:16px"><b><br>FORMAS DE PAGAMENTO</b></span>
+																	</center>
+																	
+																	<ul style="list-style:none;padding-bottom:0px">
+																		<center>
+																		<li style="float:left;padding-Right:10px;padding-Left:50px;align:center">  <a href="#">
+																			
+																			<img src="http://s33.postimg.org/9vfnc2v7z/visa.png" width="auto" height="auto" class="flexibleImage"  />
+																		</a></li>
+																		<li style="float:left;padding-Right:10px;align:center"> <a href="#">
+																			<img src="http://s33.postimg.org/976st4wi7/masster.png" width="auto" height="auto" class="flexibleImage" />
+																		</a></li>
+																		<li style="float:left;padding-Right:10px;align:center"> <a href="#">
+																			<img src="http://s33.postimg.org/s274xalxr/dinner.png" width="auto" height="auto" class="flexibleImage" />
+																		</a></li>
+																		<li style="float:left;padding-Right:10px;align:center"> <a href="#">
+																			<img src="http://s33.postimg.org/niuwbs427/ammarica.png" width="auto" height="auto" class="flexibleImage" />
+																		</a></li>
+																		<li style="float:left;padding-Right:10px;align:center"> <a href="#">
+																		
+																			<img src="http://s33.postimg.org/4gbiout1r/aura.png" width="auto" height="auto" class="flexibleImage" />
+																		</a></li>
+																		<li style="float:left;padding-Right:10px;align:center"> 
+																		<a href="#">
+																		
+																			<img src="http://s33.postimg.org/bjskvyd8v/boletu.png" width="auto" height="auto" class="flexibleImage" />
+																		</a>
+																		</li>
+																		<li style="float:left;padding-Right:10px;align:center"> 
+																		<a href="#">
+																		
+																			<img src="http://s33.postimg.org/85k1qodjj/bradesco_thumb.png" width="auto" height="auto" class="flexibleImage" />
+																		</a>
+																		</li>
+																		<li style="float:left;padding-Right:0px;align:center"> 
+																		<a href="#">
+																		
+																			<img src="http://s33.postimg.org/kmqpdu8pb/itau.png" width="auto" height="auto" class="flexibleImage" />
+																		</a>
+																		</li>
+																		</center>
+																	
+																	</ul>
+																	
+                                                                    
+																	
+                                                                    </td>
+																	
+																	
+																	
+                                                                </tr>
+                                                            </table>
+															
+                                                            
+															
+
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // FLEXIBLE CONTAINER -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // CENTERING TABLE -->
+                                </td>
+                            </tr>
+                            <!-- // MODULE ROW -->
+
+							<!-- MODULE ROW // -->
+							<tr bgcolor="#005E94">
+                            	<td align="center" valign="top">
+                                	<!-- CENTERING TABLE // -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td align="center" valign="top">
+                                            	<!-- FLEXIBLE CONTAINER // -->
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                	<tr>
+                                                    	<td align="center" valign="top" width="600" class="flexibleContainerCell">
+
+
+                                                            <!-- CONTENT TABLE // -->
+                                                            <!--
+                                                            	The table cell imageContent has padding
+                                                                applied to the bottom as part of the framework,
+                                                                ensuring images space correctly in Android Gmail.
+                                                            -->
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr >
+																	<td>
+                                                                     
+																	<ul style="list-style:none;padding-bottom:50px;color:#FFFFFF;font-family:Helvetica;font-size:12px;text-transform:uppercase;font-weight:bold;align:left">
+																		<center>
+																		<li style="float:left;padding-Right:5px;padding-Left:0px;padding-top:5px;font-size:24px"> 
+																			<b>CONTATO</b>
+																		</li>
+																		<li style="float:left;padding-Right:10px;"> 
+																		São Paulo <br />
+																	Rio de janeiro <br />
+																		Belo horizonte
+																		</li>
+																		<li style="float:left;padding-Right:29px;"> 
+																			(11) 4063-5511<br />
+															(21) 4063-7575<br />
+															(31) 4063-9533
+																		</li>
+																		<li style="float:left;padding-Right:10px;"> 
+																				Brasilia <br />
+															salvador<br />
+															Curitiba
+																		</li>
+																		<li style="float:left;">
+																		61) 4063-8266<br />
+															(71) 4062-9296<br />
+															(41) 4063-5511
+																		</li>
+																		
+																		
+																		</center>
+																	
+																	</ul>
+																	</td>
+																	
+                                                                </tr>
+																
+                                                            </table>
+                                                            <!-- // CONTENT TABLE -->
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" >
+                                                                <tr >
+																	<td>
+																	<hr>
+																	
+																	<ul style="list-style:none;padding-bottom:50px">
+																		<center>
+																		<li style="float:left;padding-Right:10px;padding-Left:100px;align:center">  <a href="#">
+																			
+																			<img src="http://s33.postimg.org/hcatis9nj/facebook.png" width="auto" height="auto" class="flexibleImage"  />
+																		</a></li>
+																		<li style="float:left;padding-Right:10px;align:center"> <a href="#">
+																			<img src="http://s33.postimg.org/isqxeo1y7/twitter.png" width="auto" height="auto" class="flexibleImage" />
+																		</a></li>
+																		<li style="float:left;padding-Right:10px;align:center"> <a href="#">
+																			<img src="http://s33.postimg.org/d5ukh6zfj/inst.png" width="auto" height="auto" class="flexibleImage" />
+																		</a></li>
+																		<li style="float:left;padding-Right:10px;align:center"> <a href="#">
+																			<img src="http://s33.postimg.org/51mgcgd0f/youtube.png" width="auto" height="auto" class="flexibleImage" />
+																		</a></li>
+																		<li style="float:left;padding-Right:10px;align:center"> <a href="#">
+																		
+																			<img src="http://s33.postimg.org/6upd0ry73/google.png" width="auto" height="auto" class="flexibleImage" />
+																		</a></li>
+																		<li style="float:left;padding-Right:10px;align:center"> 
+																		<a href="#">
+																		
+																			<img src="http://s33.postimg.org/7li36k0kf/feed.png" width="auto" height="auto" class="flexibleImage" />
+																		</a>
+																		</li>
+																		</center>
+																	
+																	</ul>
+																	
+                                                                    
+																	
+                                                                    </td>
+																	
+																	
+																	
+                                                                </tr>
+                                                            </table>
+															
+
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // FLEXIBLE CONTAINER -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // CENTERING TABLE -->
+                                </td>
+                            </tr>
+                            <!-- // MODULE ROW -->
+							
+
+							<tr>
+                            	<td align="center" valign="top">
+                                	<!-- CENTERING TABLE // -->
+                                    <!--
+                                    	The centering table keeps the content
+                                        tables centered in the emailBody table,
+                                        in case its width is set to 100%.
+                                    -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td align="center" valign="top">
+                                            	<!-- FLEXIBLE CONTAINER // -->
+                                                <!--
+                                                	The flexible container has a set width
+                                                    that gets overridden by the media query.
+                                                    Most content tables within can then be
+                                                    given 100% widths.
+                                                -->
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                	<tr>
+                                                    	<td align="center" valign="top" width="600" class="flexibleContainerCell">
+
+
+                                                            <!-- CONTENT TABLE // -->
+                                                            <!--
+                                                            	The content table is the first element
+                                                                that's entirely separate from the structural
+                                                                framework of the email.
+                                                            -->
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td valign="top" class="textContent" style="font-size:10px">
+                                                                        <p>
+													Você recebeu este e-mail porque autorizou o envio quando se cadastrou na Madrugão Suplementos. As ofertas anunciadas neste e-mail são válidas até 02/05/2016, enquanto durarem os estoques. As promoções na Madrugão Suplementos não são cumulativas. Oferecemos frete gratuito nas compras acima de R$ 149,00. As imagens encontradas no e-mail são meramente ilustrativas.
+												</p>
+												<p>
+												Preços e condições válidos somente para compra por meio desta mensagem. As condições de venda podem ser alteradas após o envio dessa mensagem, confira sempre o preço na página do produto na loja antes de comprar. Caso haja diferença de preço ou descrição do produto entre este e-mail e o do site, a condição válida e praticada será a do site. Compras feitas com cartões podem ser parceladas em até 6x sem juros, respeitando-se o valor da parcela mínima de R$ 40,00. Compras com Boleto Bancário ou depósito/transferência sempre recebem um desconto de 10% do valor total.
+												</p>
+												<p>
+												A Madrugão Suplementos é segura. Para proteger todos os seus dados, contamos com os principais sistemas de segurança: Certificado de segurança SSL da Comodo (uma das maiores empresas certificadoras do mundo). Tal certificado garante que todos os seus dados pessoais tais como, endereço de entrega, dados de cartão de crédito e histórico de pedidos, jamais sejam divulgados. Essa tecnologia também impede que o trânsito de informações seja acessado por terceiros. Certificado do Site Blindado. Comprova que o site está seguro, através da avaliação em tempo real de possíveis vulnerabilidades.
+												</p>
+												<p>
+												Para esclarecer dúvidas ou enviar sugestões, acesse nossa central de relacionamento, escreva parasuporte@madrugaosuplementos.com.br ou ligue São Paulo: (11) 4063-5511, Rio de Janeiro: (21) 4063-7575, Belo Horizonte: (31) 4063-9533, Curitiba: (41) 4063-5511, Brasília: (61) 4063-8266 e Salvador: (71) 4062-9296.
+												</p>
+												<p>
+												Para entrega via motoboy, consulte os bairros participantes em nosso site ou através da central telefônica.
+												</p>
+												<p>
+												* Valores já com 10% de desconto para pagamentos via Boleto Bancário e será concedido um desconto adicional de R$ 10 para compras de BCAA acima de R$ 100,00. Compras via cartão de crédito recebem apenas os R$10,00 do código promocional. Os descontos concedidos serão aplicados na finalização de seu pedido. Desconto não é válido para as marcas Universal Nutrition, Optimum, Dymatize, Nutrex, Musclemeds e Labrada.
+												</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // CONTENT TABLE -->
+
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // FLEXIBLE CONTAINER -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // CENTERING TABLE -->
+                                </td>
+                            </tr>
+                            <!-- // MODULE ROW -->
+
+							
+
+
+                        </table>
+                    	<!-- // EMAIL CONTAINER -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

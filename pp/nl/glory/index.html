@@ -1,0 +1,803 @@
+<!DOCTYPE >
+<html >
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Glory</title>
+      
+      <style type="text/css">
+         /* Client-specific Styles */
+         #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+         body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+         /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+         .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force 
+         #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+         img {outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic;}
+         a img {border:none;}
+         .image_fix {display:block;}
+         p {margin: 0px 0px !important;}
+         table td {border-collapse: collapse;}
+         table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+         a {color: #33b9ff;text-decoration: none;text-decoration:none!important;}
+         /*STYLES*/
+         table[class=full] { width: 100%; clear: both; }
+         /*IPAD STYLES*/
+         @media only screen and (max-width: 640px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: #33b9ff; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #33b9ff !important;
+         pointer-events: auto;
+         cursor: default;
+         }
+         table[class=devicewidth] {width: 440px!important;text-align:center!important;}
+         table[class=devicewidthinner] {width: 250px!important;text-align:center!important;}
+         table[class=mainsmall1] { float:left!important;}
+         table[class=mainsmall2] { float:right!important;}
+         table[class=banner-gap] { display:none!important;}
+         img[class="bannerbig"] {width: 440px!important;height:500px!important;}
+         img[class="spacinglines"]{width: 420px!important;}
+         
+         
+         }
+         /*IPHONE STYLES*/
+         @media only screen and (max-width: 480px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: #33b9ff; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #33b9ff !important; 
+         pointer-events: auto;
+         cursor: default;
+         }
+         table[class=devicewidth] {width: 280px!important;text-align:center!important;}
+         table[class=devicewidthinner] {width: 250px!important;text-align:center!important;}
+         table[class=mainsmall1] { float:left!width: 160px!important;height:230px!important;}
+         table[class=mainsmall2] { float:right!width: 160px!important;height:230px!important;}
+         img[class=mainsmall1] { width: 160px!important;height:230px!important;}
+         img[class=mainsmall2] { width: 160px!important;height:230px!important;}
+         img[class=mainsmall4] { width: 280px!important;height:50px!important;align:center}
+         img[class=mainsmall5] { width: 280px!important;height:50px!important;align:center}
+         table[class=banner-gap] { display:none!important;}
+         img[class="bannerbig"] {width: 280px!important;height:236px!important;}
+         img[class="spacinglines"]{width: 260px!important;}
+         
+        
+         }
+      </style>
+	  <style type="text/css">
+			/* RESET STYLES */
+			html { background-color:#FFFFFF; margin:0; padding:0; }
+			body, #bodyTable, #bodyCell, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;font-family:Helvetica, Arial, "Lucida Grande", sans-serif;}
+			table{border-collapse:collapse;}
+			table[id=bodyTable] {width:100%!important;margin:auto;max-width:600px!important;color:#7A7A7A;font-weight:normal;}
+			img, a img{border:0; outline:none; text-decoration:none;height:auto; line-height:100%;}
+			a {text-decoration:none !important;border-bottom: 1px solid;}
+			h1, h2, h3, h4, h5, h6{color:#5F5F5F; font-weight:normal; font-family:Helvetica; font-size:20px; line-height:125%; text-align:Left; letter-spacing:normal;margin-top:0;margin-right:0;margin-bottom:10px;margin-left:0;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;}
+
+			/* CLIENT-SPECIFIC STYLES */
+			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail/Outlook.com to display emails at full width. */
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%;} /* Force Hotmail/Outlook.com to display line heights normally. */
+			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up. */
+			#outlook a{padding:0;} /* Force Outlook 2007 and up to provide a "view in browser" message. */
+			img{-ms-interpolation-mode: bicubic;display:block;outline:none; text-decoration:none;} /* Force IE to smoothly render resized images. */
+			body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; font-weight:normal!important;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
+			.ExternalClass td[class="ecxflexibleContainerBox"] h3 {padding-top: 10px !important;} /* Force hotmail to push 2-grid sub headers down */
+
+			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+
+			/* ========== Page Styles ========== */
+			h1{display:block;font-size:26px;font-style:normal;font-weight:normal;line-height:100%;}
+			h2{display:block;font-size:20px;font-style:normal;font-weight:normal;line-height:120%;}
+			h3{display:block;font-size:17px;font-style:normal;font-weight:normal;line-height:110%;}
+			h4{display:block;font-size:18px;font-style:italic;font-weight:normal;line-height:100%;}
+			.flexibleImage{height:auto;}
+			.linkRemoveBorder{border-bottom:0 !important;}
+			table[class=flexibleContainerCellDivider] {padding-bottom:0 !important;padding-top:0 !important;}
+
+			body, #bodyTable{background-color:#FFFFFF;}
+			#emailHeader{background-color:#FFFFFF;}
+			#emailBody{background-color:#FFFFFF;border-radius:10px}
+			#emailFooter{background-color:#FFFFFF;}
+			.nestedContainer{background-color:#F8F8F8; border:1px solid #CCCCCC;}
+			.emailButton{background-color:#205478; border-collapse:separate;}
+			.buttonContent{color:#FFFFFF; font-family:Helvetica; font-size:18px; font-weight:bold; line-height:100%; padding:15px; text-align:center;}
+			.buttonContent a{color:#FFFFFF; display:block; text-decoration:none!important; border:0!important;}
+			.emailCalendar{background-color:#FFFFFF; border:1px solid #CCCCCC;}
+			.emailCalendarMonth{background-color:#205478; color:#FFFFFF; font-family:Helvetica, Arial, sans-serif; font-size:16px; font-weight:bold; padding-top:10px; padding-bottom:10px; text-align:center;}
+			.emailCalendarDay{color:#205478; font-family:Helvetica, Arial, sans-serif; font-size:60px; font-weight:bold; line-height:100%; padding-top:20px; padding-bottom:20px; text-align:center;}
+			.imageContentText {margin-top: 10px;line-height:0;}
+			.imageContentText a {line-height:0;}
+			#invisibleIntroduction {display:none !important;} /* Removing the introduction text from the view */
+
+			/*FRAMEWORK HACKS & OVERRIDES */
+			span[class=ios-color-hack] a {color:#275100!important;text-decoration:none!important;} /* Remove all link colors in IOS (below are duplicates based on the color preference) */
+			span[class=ios-color-hack2] a {color:#205478!important;text-decoration:none!important;}
+			span[class=ios-color-hack3] a {color:#8B8B8B!important;text-decoration:none!important;}
+			/* A nice and clean way to target phone numbers you want clickable and avoid a mobile phone from linking other numbers that look like, but are not phone numbers.  Use these two blocks of code to "unstyle" any numbers that may be linked.  The second block gives you a class to apply with a span tag to the numbers you would like linked and styled.
+			Inspired by Campaign Monitor's article on using phone numbers in email: http://www.campaignmonitor.com/blog/post/3571/using-phone-numbers-in-html-email/.
+			*/
+			.a[href^="tel"], a[href^="sms"] {text-decoration:none!important;color:#606060!important;pointer-events:none!important;cursor:default!important;}
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:none!important;color:#606060!important;pointer-events:auto!important;cursor:default!important;}
+
+
+			/* MOBILE STYLES */
+			@media only screen and (max-width: 480px){
+				/*////// CLIENT-SPECIFIC STYLES //////*/
+				body{width:100% !important; min-width:100% !important;} /* Force iOS Mail to render the email at full width. */
+
+				/* FRAMEWORK STYLES */
+				/*
+				CSS selectors are written in attribute
+				selector format to prevent Yahoo Mail
+				from rendering media query styles on
+				desktop.
+				*/
+				/*td[class="textContent"], td[class="flexibleContainerCell"] { width: 100%; padding-left: 10px !important; padding-right: 10px !important; }*/
+				table[id="emailHeader"],
+				table[id="emailBody"],
+				table[id="emailFooter"],
+				table[class="flexibleContainer"],
+				td[class="flexibleContainerCell"] {width:100% !important;}
+				td[class="flexibleContainerBox"], td[class="flexibleContainerBox"] table {display: block;width: 100%;text-align: left;}
+				/*
+				The following style rule makes any
+				image classed with 'flexibleImage'
+				fluid when the query activates.
+				Make sure you add an inline max-width
+				to those images to prevent them
+				from blowing out.
+				*/
+				td[class="imageContent"] img {height:auto !important; width:100% !important; max-width:100% !important; }
+				img[class="flexibleImage"]{height:auto !important; width:100% !important;max-width:100% !important;}
+				img[class="flexibleImageSmall"]{height:auto !important; width:auto !important;}
+
+
+				
+
+			}
+
+
+			@media only screen and (-webkit-device-pixel-ratio:.75){
+				/* Put CSS for low density (ldpi) Android layouts in here */
+			}
+
+			@media only screen and (-webkit-device-pixel-ratio:1){
+				/* Put CSS for medium density (mdpi) Android layouts in here */
+			}
+
+			@media only screen and (-webkit-device-pixel-ratio:1.5){
+				/* Put CSS for high density (hdpi) Android layouts in here */
+			}
+			/* end Android targeting */
+
+			/* CONDITIONS FOR IOS DEVICES ONLY
+			=====================================================*/
+			@media only screen and (min-device-width : 320px) and (max-device-width:568px) {
+
+			}
+			/* end IOS targeting */
+		</style>
+		
+	  
+   </head>
+   <body>
+<!-- Start of preheader -->
+
+<!-- End of menu -->  
+<table>
+		<tr>
+             <td width="20" height="40" align="left"></td>
+         </tr>
+</table> 
+<div  style="border-radius:30px">    
+<center style="background-color:#FFFFFF; ">
+			
+						
+						<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600" id="emailHeader">
+
+							<!-- HEADER ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // END -->
+
+						</table>
+						<!-- // END -->
+
+						<!-- EMAIL BODY // -->
+						<!--
+							The table "emailBody" is the email's container.
+							Its width can be set to 100% for a color band
+							that spans the width of the page.
+							
+						-->
+					<div style="border-radius:100px">
+						<table bgcolor="#FFFFFF"  border="0" cellpadding="0" cellspacing="0" width="600" id="emailBody" >
+
+							<!-- MODULE ROW // -->
+							<!--
+								To move or duplicate any of the design patterns
+								in this email, simply move or copy the entire
+								MODULE ROW section for each content block.
+							-->
+							<tr style="border-radius:100px">
+								<td align="center" valign="top" >
+									<!-- CENTERING TABLE // -->
+									<!--
+										The centering table keeps the content
+										tables centered in the emailBody table,
+										in case its width is set to 100%.
+									-->
+									<table border="0" cellpadding="0" cellspacing="10" width="100%"  style="color:#FFFFFF; background-color:#FE9900;border-radius:0px 0px 120px 120px " >
+										<tr >
+											<td align="center" valign="top" >
+												<!-- FLEXIBLE CONTAINER // -->
+												<!--
+													The flexible container has a set width
+													that gets overridden by the media query.
+													Most content tables within can then be
+													given 100% widths.
+												-->
+												<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+													<tr >
+														<td align="center" valign="top" width="500" class="flexibleContainerCell" >
+
+															<!-- CONTENT TABLE // -->
+															<!--
+															The content table is the first element
+																that's entirely separate from the structural
+																framework of the email.
+															-->
+															<table border="0" cellpadding="30" cellspacing="0" width="100%" >
+																<tr>
+																	<td align="center" valign="top" class="textContent" >
+																		<h1 style="color:#FFFFFF;line-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-bottom:5px;text-align:center;">Popular Products</h1>
+																		<h2 style="text-align:center;font-weight:normal;font-family:Helvetica,Arial,sans-serif;font-size:23px;margin-bottom:10px;color:#205478;line-height:135%;"></h2>
+																		
+																	</td>
+																</tr>
+															</table>
+															<!-- // CONTENT TABLE -->
+
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+				</center>
+				</div>
+				<table>
+		<tr>
+             <td width="20" height="10" align="left"></td>
+         </tr>
+</table> 
+				
+			
+					
+			
+
+<table width="100%" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="header">
+   
+      <tr>
+         <td>
+            <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+               <tbody>
+                  <tr>
+                     <td width="100%">
+                        <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <!-- big image -->
+                                    <table width="400" align="right" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner" >
+                                       <tbody>
+                                          <tr>
+                                             <td>
+											 <table width="180" align="right" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                   <tbody>
+                                                      <!-- title -->
+                                                      <tr>
+                                                         <td style="font-family: Helvetica, arial, sans-serif; font-size: 14px; color: #262626; text-align:left; line-height: 20px;" class="padding-top15">
+                                                               Issue: 21 August 2016
+                                                         </td>
+                                                      </tr>
+                                                     
+                                                      <!-- end of content -->
+                                                   </tbody>
+                                                </table>
+												<table>
+		<tr>
+             <td width="20" height="40" align="left"></td>
+         </tr>
+</table>
+                                                <!-- start of text content table -->
+                                                <table width="140" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                   <tbody>
+                                                      <!-- image -->
+                                                      <tr>
+                                                         <td width="90" height="140" align="center">
+                                                            <img src="http://s10.postimg.org/5c52ro079/image.jpg" alt="" border="0" width="110" height="140" style="display:block; border:none; outline:none; text-decoration:none;" label="articleimage">
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                                <!-- start of right column -->
+                                                <table width="250" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                   <tbody>
+                                                      <!-- title -->
+                                                      <tr align="left"> 
+                                                         <td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #262626; text-align:left; line-height: 20px;" class="padding-top15">
+                                                               Dear Robert,
+                                                         </td>
+                                                      </tr>
+                                                      <!-- end of title -->
+                                                      <!-- Spacing -->
+                                                      
+                                                      <!-- Spacing -->
+                                                      <!-- content -->
+                                                      <tr>
+                                                         <td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #333333; text-align:left;line-height: 20px;">                                                          
+														Like any business, we have lots of competitors. Maybe some of them have called on you. If they haven’t yet, they will. And when they do, one of the first things they’ll talk about is price.
+															
+                                                         </td>
+                                                      </tr>
+                                                      <!-- end of content -->
+                                                   </tbody>
+                                                </table>
+                                                <!-- end of right column -->
+									<table width="400" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+                                       <tbody>
+                                          <!-- Title -->
+                                         
+                                          <!-- End of spacing -->
+                                          <!-- content -->
+                                          <tr>
+                                             <td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #333333; text-align:left;line-height: 20px;">
+                                                This is one of the great ironies of promotional products. To get your business (or lure you away from a competitor), distributors invariably focus on how much more cost-effective imprinted items are or how they can do more for less – in other words, they talk price. But once they have the business locked up, price takes a backseat to relationships, creativity and numerous other factors.
+                                          </tr>
+                                          <!-- End of content -->
+                                          <!-- Spacing -->
+                                         
+                                        
+                                         
+                                          <!-- Spacing -->
+                                       </tbody>
+									   
+                                    </table>
+									<table width="140" align="right" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                   <tbody>
+                                                      <!-- image -->
+                                                      <tr>
+                                                         <td width="90" height="140" align="center">
+                                                            <img src="http://s10.postimg.org/50nmewjr9/bag.jpg" alt="" border="0" width="140" height="100" style="display:block; border:none; outline:none; text-decoration:none;" label="articleimage">
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+												<table width="260" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+                                       <tbody>
+                                          <!-- Title -->
+                                         
+                                          <!-- End of spacing -->
+                                          <!-- content -->
+                                          <tr>
+                                             <td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #333333; text-align:left;line-height: 20px;">
+                                               And that’s as it should be. As we’ve said before, staying on budget is only one element in the promotional mix. Here are some other key considerations to keep in mind:
+											   <br>
+											   <b>Turnaround time.</b> When do you need it?Is on-time delivery guaranteed?
+                                          </tr>
+										  
+                                          <!-- End of content -->
+                                          <!-- Spacing -->
+                                       
+                                       </tbody>
+									   
+                                    </table>
+									<table width="400" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+                                       <tbody>
+                                          <!-- Title -->
+                                         
+                                          <!-- End of spacing -->
+                                          <!-- content -->
+                                          <tr>
+                                             <td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #333333; text-align:left;line-height: 20px;">
+                                                  Does your current provider have a good track record in this area?
+                                          </tr>
+                                          <!-- End of content -->
+                                          <!-- Spacing -->
+                                          <tr>
+                                             <td width="100%" height="8"></td>
+                                          </tr>
+                                         
+                                         
+                                          <!-- Spacing -->
+                                       </tbody>
+									   
+                                    </table>
+									<table width="140" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                   <tbody>
+                                                      <!-- image -->
+                                                      <tr>
+                                                         <td width="90" height="140" align="center">
+                                                            <img src="http://s10.postimg.org/i634l0dmt/watch.jpg" alt="" border="0" width="110" height="140" style="display:block; border:none; outline:none; text-decoration:none;" label="articleimage">
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                     </table>
+									 <table width="250" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                   <tbody>
+                                                      <!-- title -->
+                                                    
+                                                      <tr>
+                                                         <td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #333333; text-align:left;line-height: 20px;">                                                          
+														<b>Quality.</b> Do the products you use have a high perceived value? Will they last? Will logoed apparel stand up under repeated washing/wearing? Remember that your company’s image and reputation are a reflection of the imprinted items you distribute
+															
+                                                         </td>
+                                                      </tr>
+                                                      <!-- end of content -->
+                                                   </tbody>
+                                                </table>
+												
+												<table width="400" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+                                       <tbody>
+                                          <!-- Title -->
+                                         
+                                          <!-- End of spacing -->
+                                          <!-- content -->
+                                          <tr>
+                                             <td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #333333; text-align:left;line-height: 20px;">
+                                                <b>Creativity.</b>  Are the ideas your provider comes up with cutting through the clutter and achieving your marketing goals? Is packaging always discussed? How about targeting and delivery?
+                                          </tr>
+                                          <!-- End of content -->
+                                          <!-- Spacing -->
+                                          <tr>
+                                             <td width="100%" height="8"></td>
+                                          </tr>
+                                         
+                                         
+                                          <!-- Spacing -->
+                                       </tbody>
+									   
+                                    </table>
+									<table width="400" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+                                       <tbody>
+                                          <!-- Title -->
+                                         
+                                          <!-- End of spacing -->
+                                          <!-- content -->
+                                          <tr>
+                                             <td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #333333; text-align:left;line-height: 20px;">
+                                                <b>Availability.</b>  Will the items you choose be in stock if you need to re-order? How about color, size, etc.? This factor also ties in with turnaround time.
+                                          </tr>
+                                          <!-- End of content -->
+                                          <!-- Spacing -->
+                                        
+                                         
+                                         
+                                          <!-- Spacing -->
+                                       </tbody>
+									   
+                                    </table>
+									<table width="140" align="right" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                   <tbody>
+                                                      <!-- image -->
+                                                      <tr>
+                                                         <td width="90" height="140" align="center">
+                                                            <img src="http://s10.postimg.org/4doppdmv9/ring.jpg" alt="" border="0" width="120" height="160" style="display:block; border:none; outline:none; text-decoration:none;" label="articleimage">
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+												<table width="260" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+                                       <tbody>
+                                          <!-- Title -->
+                                         
+                                          <!-- End of spacing -->
+                                          <!-- content -->
+                                          <tr>
+                                             <td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #333333; text-align:left;line-height: 20px;">
+                                               <b>Imprint.</b> Is your message visible? Does it fit the item? Will it last? This is critical to the longevity of your promotion.
+											   <b>Shipping/Delivery.</b> Who chooses the method? Does your provider inspect the merchandise before you receive it? Is it trackable in case time becomes a factor?
+                                          </tr>
+										  
+                                          <!-- End of content -->
+                                          <!-- Spacing -->
+                                       
+                                       </tbody>
+									   
+                                    </table>
+									<table width="400" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+                                       <tbody>
+                                          <!-- Title -->
+                                         <tr>
+                                             <td width="100%" height="8"></td>
+                                          </tr>
+                                          <!-- End of spacing -->
+                                          <!-- content -->
+                                          <tr>
+                                             <td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #333333; text-align:left;line-height: 20px;">
+                                             These are the things that, taken together, create successful long-term relationships. As you can see, price is not the only factor in determining who you do business with.
+                                          </tr>
+                                          <!-- End of content -->
+                                          <!-- Spacing -->
+                                        
+                                         
+                                         
+                                          <!-- Spacing -->
+                                       </tbody>
+									   
+                                    </table>
+									<table width="200" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                   <tbody>
+                                                      <!-- image -->
+                                                      <tr>
+                                                         <td width="90" height="140" align="center">
+                                                            <img src="http://s10.postimg.org/5mclb0etl/sign.png" alt="" border="0" width="150" height="70" style="display:block; border:none; outline:none; text-decoration:none;" label="articleimage">
+															<article  style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #333333; text-align:left;line-height: 20px;">
+															<b>Cristy Arce</b><br>
+															<b>Ph:</b> <span style="color:#3D5AD2"><u> 305-888-7301</u></span><br>
+															<span style="color:#3D5AD2"><u> carce@capturedglory.net</span>
+															</article>
+                                                         </td>
+                                                      </tr>
+													   <tr>
+                                             <td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #333333; text-align:left;line-height: 20px;">
+                                             
+                                          </tr>
+                                                   </tbody>
+                                                </table>
+												<table width="200" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                   <tbody>
+                                                      <!-- image -->
+                                                      <tr>
+                                                         <td width="90" height="140" align="center">
+                                                            <img src="http://s10.postimg.org/4279cm6fd/new.gif" alt="" border="0" width="190" height="100" style="display:block; border:none; outline:none; text-decoration:none;" label="articleimage">
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+												<table width="400" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+                                       <tbody>
+                                          <!-- Title -->
+                                         <tr>
+                                             <td width="100%" height="8"></td>
+                                          </tr>
+                                          <!-- End of spacing -->
+                                          <!-- content -->
+                                          <tr>
+                                             <td style="font-family: Helvetica, arial, sans-serif; font-size: 13px; color: #333333; text-align:left;line-height: 20px;">
+                                             <b>P.S. Become a member of our<a href="#"> Facebook</a> group for useful, fun and thoughtful promotions to expand your awareness of how to get through to your clients and prospects.</b>
+                                          </tr>
+                                          <!-- End of content -->
+                                          <!-- Spacing -->
+                                        
+                                         
+                                         
+                                          <!-- Spacing -->
+                                       </tbody>
+									   
+                                    </table>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                 </table>
+									
+                                    <!-- end of big image -->
+                                    <!-- big image -->
+                                    <table width="200" cellpadding="0" cellspacing="0" border="0" align="left" class="devicewidth">
+               
+                  <tr>
+                     <td width="100%">
+					 <table>
+<tr>
+                                             <td width="20" height="40" align="left"></td>
+                                          </tr>
+</table>
+                                    <table width="200" height="150" align="right" valign="top" border="0" cellpadding="0" cellspacing="0" class="mainsmall1">
+                                       <tbody>
+                                          <tr>
+                                             <td align="left">
+                                                <div class="imgpop">
+                                                   <a target="_blank" href="#">
+                                                   <img src="http://s10.postimg.org/7o8hbinex/image.gif" alt="" border="0" width="160" height="250" style="display:block; border:none; outline:none; text-decoration:none;" class="mainsmall1">
+                                                   </a>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                           <tr>
+                                             <td width="20" height="90" align="left"></td>
+                                          </tr>
+                                          <tr>
+                                             <td align="left">
+                                                <div class="imgpop">
+                                                   <a target="_blank" href="#">
+                                                   <img src="http://s10.postimg.org/nazqow16x/image.gif" alt="" border="0" width="160" height="250"  style="display:block; border:none; outline:none; text-decoration:none;" class="mainsmall2">
+                                                   </a>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <!-- end of big image -->
+									<table width="200" height="150" align="right" valign="top" border="0" cellpadding="0" cellspacing="0" class="mainsmall1">
+                                       <tbody>
+									    <tr>
+                                             <td width="100%" height="90"></td>
+                                          </tr>
+                                          <tr>
+                                             <td align="left">
+                                                <div class="imgpop">
+                                                   <a target="_blank" href="#">
+                                                   <img src="http://s10.postimg.org/wk1wz0a2x/image.gif" alt="" border="0" width="160" height="250" style="display:block; border:none; outline:none; text-decoration:none;" class="mainsmall1">
+                                                   </a>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                           <tr>
+                                             <td width="20" height="100" align="left"></td>
+                                          </tr>
+                                          <tr>
+                                             <td align="left">
+                                                <div class="imgpop">
+                                                   <a target="_blank" href="#">
+                                                   <img src="http://s10.postimg.org/oftsu9nnt/image.gif" alt="" border="0" width="160" height="250" style="display:block; border:none; outline:none; text-decoration:none;" class="mainsmall2">
+                                                   </a>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+									
+                                    
+                                      </td>
+                                </tr>
+                             </tbody>
+                          </table>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+<table align="center" >
+	<tbody>
+	<tr>
+		<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			
+				<tr>
+					<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+						<table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
+						<tbody>	
+							<tr>
+								<td valign="top" width="600" class="flexibleContainerCell">
+
+															<!-- CONTENT TABLE // -->
+									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tbody>	
+										<tr>
+											<td align="left" valign="top" class="flexibleContainerBox">
+												<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+													<tr>
+														<td align="left" class="textContent">
+															<img src="http://s10.postimg.org/y0i0uw2dl/log.gif" width="210" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td align="right" valign="top" class="flexibleContainerBox">
+												<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="390" style="max-width:100%;border-radius:100px;">
+													<tr>
+														<td align="left" class="textContent" style="background-color:#5A79B5">
+														
+															<h3 style="color:#ffffff;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;padding-left:10px;padding-top:5px">Address</h3>
+															<div style= 	"text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#ffffff;line-height:135%;padding-left:10px">5245 NW 36th Street #230
+Miami Springs, Fl 33166
+															</div>
+															
+															<div style= 	"text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#ffffff;line-height:135%;padding-left:10px">p. 305-888-7301<br>
+f. 305-888-9410<br>
+info@capturedglory.net
+															</div>
+															
+														</td>
+																				
+													</tr>
+																			
+													
+																			
+													
+													</tbody>							
+												</table>
+												
+											</td>
+											
+										</tr>
+									</tbody>								
+									</table>
+									
+									
+															<!-- // CONTENT TABLE -->
+
+								</td>
+							</tr>							
+						</tbody>	
+						</table>
+					</td>			
+				</tr><!-- // FLEXIBLE CONTAINER -->
+										
+				</tbody>				
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+
+
+
+
+<table>
+<tr>
+                                             <td width="20" height="40" align="left"></td>
+                                          </tr>
+</table>
+
+<table>
+<tr>
+                                             <td width="20" height="40" align="left"></td>
+                                          </tr>
+</table>
+<table>
+<tr>
+                                             <td width="20" height="40" align="left"></td>
+                                          </tr>
+</table>
+
+
+
+<!-- End of banner -->
+
+
+
+<!-- end of text -->
+<!-- 3 columns -->

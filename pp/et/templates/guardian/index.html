@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Template</title>
+      
+      <style type="text/css">
+         /* Client-specific Styles */
+         #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+         body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+         /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+         .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+         #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+         img {outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic;}
+         a img {border:none;}
+         .image_fix {display:block;}
+         p {margin: 0px 0px !important;}
+         table td {border-collapse: collapse;}
+         table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+         a {color: blue;text-decoration: none;text-decoration:none!important;}
+         /*STYLES*/
+         table[class=full] { width: 100%; clear: both; }
+         /*IPAD STYLES*/
+         @media only screen and (max-width: 640px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: blue; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: blue !important;
+         pointer-events: auto;
+         cursor: default;
+         }
+         table[class=devicewidth] {width: 440px!important;text-align:center!important;background-color:#ffffff;}
+         table[class=devicewidthinner] {width: 420px!important;text-align:center!important;}
+         table[class=mainsmall1] { float:right!important;}
+         table[class=mainsmall2] { float:right!important;}
+         table[class=banner-gap] { display:none!important;}
+         img[class="bannerbig"] {width: 440px!important;height:auto!important;}
+         img[class="spacinglines"]{width: 420px!important;}
+         
+         
+         }
+         /*IPHONE STYLES*/
+         @media only screen and (max-width: 480px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: blue; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: blue !important; 
+         pointer-events: auto;
+         cursor: default;
+         }
+         table[class=devicewidth] {width: 280px!important;text-align:center!important;background-color:#ffffff;}
+         
+         table[class=devicewidthinner] {width: 260px!important;text-align:center!important;}
+         table[class=mainsmall] { align:center!important;width:280px!important;height:0px!important;background-color:#B6B4B5;}
+         table[class=mainsmall1] { align:center!important;width: auto!important;height:90px!important;background-color:#B6B4B5;padding-top:10px;}
+         table[class=mainsmall2] { align:center!important;width: auto!important;height:90px!important;background-color:#B6B4B5;}
+         img[class=mainsmall1] { width: auto!important;height:90px!important;padding-right:0px;padding-right:0px;background-color:#B6B4B5;}
+         img[class=mainsmall2] { width: auto!important;height:90px!important;background-color:#B6B4B5;}
+         table[class=banner-gap] { display:none!important;}
+         img[class="bannerbig"] {width: 280px!important;height:auto!important;}
+         img[class="spacinglines"]{width: 260px!important;}
+         
+        
+         }
+      </style>
+	  <style type="text/css">
+         /* Client-specific Styles */
+         div, p, a, li, td { -webkit-text-size-adjust:none; }
+         #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+         html{width: 100%; }
+         body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+         /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+         .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing. */
+         #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+         img {outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic;}
+         a img {border:none;}
+         .image_fix {display:block;}
+         p {margin: 0px 0px !important;}
+         table td {border-collapse: collapse;}
+         table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+         a {color: blue;text-decoration: none;text-decoration:none!important;}
+         /*STYLES*/
+         table[class=full] { width: 100%; clear: both; }
+         /*IPAD STYLES*/
+         @media only screen and (max-width: 640px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: blue; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: blue !important;
+         pointer-events: auto;
+         cursor: default;
+         }
+         table[class=devicewidth] {width: 440px!important;text-align:center!important;}
+         table[class=devicewidthinner] {width: 420px!important;text-align:center!important;}
+         img[class=banner] {width: 440px!important;height:220px!important;}
+         img[class=col2img] {width: 440px!important;height:220px!important;}
+         
+         
+         }
+         /*IPHONE STYLES*/
+         @media only screen and (max-width: 480px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: blue; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: blue !important; 
+         pointer-events: auto;
+         cursor: default;
+         }
+		 table[class=bg] {background-color:#EBEBEB;}
+         table[class=devicewidth] {width: 280px!important;text-align:center!important;}
+         table[class=devicewidthinner] {width: 260px!important;text-align:center!important;}
+         img[class=banner] {width: 280px!important;height:140px!important;}
+         img[class=col2img] {width: 240px!important;height:auto!important;}
+         
+        
+         }
+      </style>
+   </head>
+   <body>
+     
+<!-- Start of header -->
+<table width="100%" bgcolor="#E1E1E1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="header">
+   <tbody>
+      <tr>
+         <td>
+            <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+               <tbody>
+                  <tr>
+                     <td width="100%">
+                        <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                           <tbody>
+                              <!-- Spacing -->
+                              <tr>
+                                 <td width="100%" height="10"></td>
+                              </tr>
+                              <!-- Spacing -->
+                              <tr>
+                                 <td>
+                                    <!-- logo -->
+                                    <table width="600" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                       <tbody>
+                                          <tr>
+                                             <td width="600" height="50" align="left">
+                                                <div class="imgpop">
+                                                   <a target="_blank" href="#">
+                                                   
+												   <img src="http://s31.postimg.org/i4c0k1hiz/banner.png" alt="" border="0" width="600" height="auto" style="display:block; border:none; outline:none; text-decoration:none;" class="bannerbig">
+                                                   </a>
+                                                </div>
+                                             </td>
+                                          </tr>
+										  <tr bgcolor="#D1D1D1" height="30" >
+                                             <td align="left" valign="middle" style="font-family: Helvetica, arial, sans-serif; font-size: 14px;color: #212D4A;font-weight:bold" st-content="viewonline">
+                                                &nbsp;&nbsp;&nbsp;
+                                                <a href="#" style="text-decoration:none;color:#16213F">Yahoo</a>
+                                                &nbsp;&nbsp;&nbsp;
+                                                <a href="#" style="text-decoration:none;color:#16213F">Google</a>
+                                                &nbsp;&nbsp;&nbsp;
+                                                <a href="#" style="text-decoration:none;color:#16213F">TRG</a>
+                                                &nbsp;&nbsp;&nbsp;
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <!-- end of logo -->
+                                 </td>
+                              </tr>
+                              <!-- Spacing -->
+                              
+                              <!-- Spacing -->
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+<!-- End of Header -->
+<!-- Start of Left Image -->      
+<table width="100%" bgcolor="#E1E1E1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="left-image">
+   <tbody>
+      <tr>
+         <td>
+            <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+               <tbody>
+                  <tr>
+                     <td width="100%">
+                        <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth" >
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <!-- Start of left column -->
+                                    <table width="280" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                       <tbody>
+                                          <!-- image -->
+                                          <tr>
+                                             <td width="280" height="auto" align="center" class="devicewidth">
+                                                <img src="http://s31.postimg.org/uame96vwb/writer2.png" alt="" border="0" width="280" height="auto" style="display:block; border:none; outline:none; text-decoration:none;" class="col2img">
+                                             </td>
+                                          </tr>
+                                          <!-- /image -->
+                                       </tbody>
+                                    </table>
+                                    <!-- end of left column -->
+                                    <!-- spacing for mobile devices-->
+									
+                                    
+                                    <!-- end of for mobile devices-->
+                                    <!-- start of right column -->
+                                    <table width="320" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth"  class="bg">
+                                       <tbody>
+                                          <tr>
+                                             <td>
+                                                <table width="320"  height="155" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth" bgcolor="#EBEBEB">
+                                                   <tbody>
+                                                      <!-- title -->
+                                                      <tr  bgcolor="#EBEBEB" style="padding:2px">
+                                                         <td style="font-family: Helvetica, arial, sans-serif; font-size: 18px; color: #282828; text-align:left; line-height: 24px;padding-left:20px">
+                                                            Secondary Story Title
+                                                         </td>
+                                                      </tr>
+                                                      <!-- end of title -->
+                                                      
+                                                      <!-- content -->
+                                                      <tr bgcolor="#EBEBEB" style="padding:2px">
+                                                         <td style="font-family: Helvetica, arial, sans-serif; font-size: 14px; color: black; text-align:left; line-height: 18px;padding-left:20px">
+                                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <strong><a href="">READ MORE</a>  </strong>
+                                                         </td>
+                                                      </tr>
+                                                      <!-- end of content -->
+                                                      <!-- Spacing -->
+                                                      <tr>
+                                                         <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                      </tr>
+                                                      <!-- /Spacing -->
+                                                      <!-- read more -->
+                                                     
+                                                      <!-- end of read more -->
+                                                   </tbody>
+                                                </table>
+												
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+									<table align="left" border="0" cellpadding="0" cellspacing="0" class="mobilespacing">
+                                       <tbody>
+                                          <tr>
+                                             <td width="100%" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;color:red">&nbsp;</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <!-- end of right column -->
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+<!-- End of Left Image -->   
+    
+<!-- Start of banner -->
+<table width="100%" bgcolor="#E1E1E1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="header">
+   <tbody>
+      <tr>
+         <td>
+            <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+               <tbody>
+                  <tr>
+                     <td width="100%">
+                        <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <!-- big image -->
+                                    <table width="450" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth" bgcolor="#ffffff">
+                                       <tbody>
+                                          <tr>
+                                             <td width="450" height="auto" align="left">
+                                                <div class="imgpop" >
+													<p style="color:black;font-size:24px;font-family:arial;padding-bottom:0px;padding-top:20px;text-align:center;line-height:24px">The Importance of Title Commitment</p>
+													<br>
+													<center>
+                                                   <a target="_blank" href="#">
+												   
+                                                   <img src="http://s31.postimg.org/5esylp98b/graph.png" alt="" border="0" width="410" height="auto" style="display:block; border:none; outline:none; text-decoration:none;valign:center" class="bannerbig">
+                                                   </a>
+												   </center>
+												   <br>
+												   <br>
+												   
+                                                </div>
+                                             </td>
+                                          </tr>
+										  <tr >
+                                                         <td style="font-family: Helvetica, arial, sans-serif; font-size: 14px; color: black; text-align:left; line-height: 18px;padding-left:20px;padding-right:10px">
+                                                            
+														<p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </p>
+														<br>
+														
+														<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+														<br>
+														<br>
+														<strong><a href="">READ MORE</a>  </strong></p>
+														
+														<br>
+														<br>
+                                                         </td>
+                                                      </tr>
+                                       </tbody>
+                                    </table>
+                                    <!-- end of big image -->
+                                    <!-- big image -->
+                                    <table width="150" cellpadding="0" cellspacing="0" border="0" align="right" class="devicewidth" bgcolor="#B6B4B5" height="544">
+										<tbody>
+											<tr>
+												<td width="100%">
+													<table width="150"  align="right" valign="top" border="0" cellpadding="0" cellspacing="0" class="mainsmall">
+													   <tbody>
+															<tr>
+															 <td width="20" height="12" align="left"></td>
+														  </tr>
+														  <tr>
+															 <td align="center">
+																<div class="imgpop">
+																<center>
+																   <a target="_blank" href="#">
+																   <img src="http://s10.postimg.org/70cd2e5jd/gtc_Online_Property_Profile.jpg" alt="" border="0" width="auto" height="auto" style="display:block; border:none; outline:none; text-decoration:none;" class="mainsmall1">
+																   </a>
+																   </center>
+																</div>
+															 </td>
+														  </tr>
+														   <tr>
+															 <td width="20" height="12" align="left"></td>
+														  </tr>
+														  <tr>
+															 <td align="center">
+																<div class="imgpop">
+																   <a target="_blank" href="#">
+																   <center>
+																   <img src="http://s10.postimg.org/o2574hkeh/CFPB_flyers.jpg" alt="" border="0" width="auto" height="auto" style="display:block; border:none; outline:none; text-decoration:none;" class="mainsmall2">
+																   </center>
+																   </a>
+																</div>
+															 </td>
+														  </tr>
+														  <tr>
+															 <td width="20" height="12" ></td>
+														  </tr>
+														  <tr>
+															 <td align="center">
+																<div class="imgpop">
+																   <a target="_blank" href="#">
+																   <center>
+																   <img src="http://s10.postimg.org/bc0yrecg9/gtc_Net_Seller_Calcu.jpg" alt="" border="0" width="auto" height="auto" style="display:block; border:none; outline:none; text-decoration:none;" class="mainsmall2">
+																   </center>
+																   
+																   </a>
+																</div>
+															 </td>
+														  </tr>
+														  <tr>
+															 <td width="20" height="12" ></td>
+														  </tr>
+														  <tr>
+															 <td align="center">
+																<div class="imgpop">
+																   <a target="_blank" href="#">
+																   <center>
+																   <img src="http://s10.postimg.org/bq6w4qlxl/201503_cfpb_your_home_loan_toolkit_web_3_Page_01.jpg" alt="" border="0" width="auto" height="auto" style="display:block; border:none; outline:none; text-decoration:none;" class="mainsmall2">
+																   </center>
+																   
+																   </a>
+																</div>
+															 </td>
+														  </tr>
+														  <tr>
+															 <td width="20" height="58" align="left"></td>
+														  </tr>
+													   </tbody>
+													</table>
+                                    <!-- end of big image -->
+                                    
+												</td>
+											</tr>
+										</tbody>
+									</table>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+<!-- Start of preheader -->
+<table width="100%" bgcolor="#E1E1E1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="preheader" >
+   <tbody>
+      <tr>
+         <td>
+            <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+               <tbody>
+                  <tr>
+                     <td width="100%">
+                        <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                           <tbody>
+								<tr>
+                                 <td width="100%" height="15"></td>
+                              </tr>
+                              
+                              <tr>
+                                 <td>
+                                    <table width="600" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                       <tbody>
+                                          <tr>
+                                             <td align="left" valign="middle" style="font-family: Helvetica, arial, sans-serif; font-size: 12px;color: #666666" st-content="viewonline">
+											 <center>
+                                                If you do not want to hear from us please <a href="#" style="text-decoration:none;color:#903537">unsubscribe</a>
+												</center>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <!-- Spacing -->
+                              <tr>
+                                 <td width="100%" height="20"></td>
+                              </tr>
+                              <!-- Spacing -->
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+<!-- End of preheader -->    
+
+   </body>
+   </html>
